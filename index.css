@@ -26,8 +26,8 @@ header {
     cursor: pointer;
     order: 3;
     margin-left: auto;
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 75px;
 }
 
 nav {
@@ -84,13 +84,14 @@ body, html {
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
     url("Yvette.jpg");
-    height: 50%; /* Set a specific height for the section */
+    height: 75vh;
     background-position: center;
     background-size: cover;
     color: white;
     text-align: right;
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   .hero-content {
@@ -109,4 +110,35 @@ body, html {
   p {
     font-size: 1.2em;
     background-color: transparent;
+  }
+
+  .about-me {
+    text-align: left;
+    color: white;
+    margin: 15%;
+  }
+
+  .aboutme-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .grid-item {
+    width: 300px;
+    height: auto;
+  }
+
+  img {
+    background-image: url("./media/clouds.jpg");
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .skills {
+    text-align: left;
+    color: white;
+    margin: 15%;
   }
