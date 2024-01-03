@@ -26,8 +26,8 @@ header {
     cursor: pointer;
     order: 3;
     margin-left: auto;
-    width: 150px;
-    height: 75px;
+    width: 100px;
+    height: auto;
 }
 
 nav {
@@ -141,4 +141,31 @@ body, html {
     text-align: left;
     color: white;
     margin: 15%;
+    gap: 5px;
+  }
+
+  .projects {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .project-item h3 {
+    margin-top: 10px;
+  }
+  
+  .project-item p {
+    margin-top: 10px;
   }
